@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organized Mess</title>
+<meta name="description" content="Organized Mess: things I like, sorted.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="home">
+  <header>
+    <h1>Organized Mess</h1>
+    <p>Things I like. Pick a tile.</p>
+  </header>
+  <nav id="tiles" aria-label="Sections"></nav>
+</main>
+
+<section id="panel" hidden aria-modal="true" role="dialog">
+  <div class="panel-bar">
+    <button id="close" aria-label="Back">← Back</button>
+    <h2 id="panel-title"></h2>
+  </div>
+  <div id="panel-body"></div>
+</section>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
